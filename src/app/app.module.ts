@@ -9,6 +9,7 @@ import { CardsCategoriaComponent } from './components/cards/cards-categoria.comp
 import { CardsProdutosComponent } from './components/cards-produtos/cards-produtos.component';
 import { FeaturesIconsComponent } from './components/features-icons/features-icons.component';
 import { NewsletterFormComponent } from './components/newsletter-form/newsletter-form.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { NewsletterFormComponent } from './components/newsletter-form/newsletter
     CardsCategoriaComponent,
     CardsProdutosComponent,
     FeaturesIconsComponent,
-    NewsletterFormComponent
+    NewsletterFormComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
