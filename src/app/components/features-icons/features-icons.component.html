@@ -1,0 +1,19 @@
+<div class="pb-4">
+  <h2 class="text-center">Conheça todas as nossas facilidades</h2>
+
+  <div
+    class="d-flex flex-column flex-lg-row align-items-center justify-content-center"
+  >
+    <div
+      *ngFor="let item of list"
+      class="d-flex align-items-center"
+      style="width: 325px"
+    >
+      <div><i [ngClass]="'bi ' + item.icon + ' fs-1'"></i></div>
+      <div>
+        <div class="ms-3 mb-1">{{ item.titulo }}</div>
+        <div class="ms-3" style="font-size: 13px">{{ item.descricao }}</div>
+      </div>
+    </div>
+  </div>
+</div>
