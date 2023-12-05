@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { CarouselComponent } from './components/carousel/carousel.component';
-import { CardsCategoriaComponent } from './components/cards/cards-categoria.component';
+import { CardsCategoriaComponent } from './components/cards-categoria/cards-categoria.component';
 import { CardsProdutosComponent } from './components/cards-produtos/cards-produtos.component';
 import { FeaturesIconsComponent } from './components/features-icons/features-icons.component';
 import { NewsletterFormComponent } from './components/newsletter-form/newsletter-form.component';
