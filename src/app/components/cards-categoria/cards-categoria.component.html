@@ -4,19 +4,19 @@
   <div *ngFor="let item of list" class="col-6 col-md-4 col-xl-2">
     <div class="card rounded-0 border-0">
       <img
-        class="d-md-none b-block"
+        class="d-md-none d-block"
         [src]="item.mobileImageSrc"
-        alt="Camiseta Masculina de manga na cor verde"
+        alt="Imagem para MOBILE"
       />
       <img
         class="d-none d-md-block d-xl-none"
         [src]="item.tabletImageSrc"
-        alt="Camiseta Masculina de manga na cor verde"
+        alt="Imagem para TABLET"
       />
       <img
         class="d-none d-xl-block"
         [src]="item.desktopImageSrc"
-        alt="Camiseta Masculina de manga na cor verde"
+        alt="Imagem para DESKTOP"
       />
       <div class="card-header bg-black text-bg-dark">
         <p class="card-text btn-primary text-center">{{ item.nome }}</p>
