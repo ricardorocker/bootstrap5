@@ -1,22 +1,23 @@
-<h2 class="text-center">Busque por categoria:</h2>
+<h2 class="text-center my-3 my-xl-5">Busque por categoria:</h2>
 
 <div class="container row mx-auto g-4">
   <div *ngFor="let item of list" class="col-6 col-md-4 col-xl-2">
-    <div class="card">
-      <svg
-        class="bd-placeholder-img card-img-top"
-        width="100%"
-        height="180"
-        xmlns="http://www.w3.org/2000/svg"
-        role="img"
-        aria-label="Placeholder: Image cap"
-        preserveAspectRatio="xMidYMid slice"
-        focusable="false"
-      >
-        <title>Placeholder</title>
-        <rect width="100%" height="100%" fill="#868e96"></rect>
-        <text x="50%" y="50%" fill="#dee2e6" dy=".3em">Image cap</text>
-      </svg>
+    <div class="card rounded-0 border-0">
+      <img
+        class="d-md-none b-block"
+        [src]="item.mobileImageSrc"
+        alt="Camiseta Masculina de manga na cor verde"
+      />
+      <img
+        class="d-none d-md-block d-xl-none"
+        [src]="item.tabletImageSrc"
+        alt="Camiseta Masculina de manga na cor verde"
+      />
+      <img
+        class="d-none d-xl-block"
+        [src]="item.desktopImageSrc"
+        alt="Camiseta Masculina de manga na cor verde"
+      />
       <div class="card-header bg-black text-bg-dark">
         <p class="card-text btn-primary text-center">{{ item.nome }}</p>
       </div>
